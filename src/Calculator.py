@@ -10,7 +10,7 @@ def subtraction(a, b):
     c = b - a
     return c
 
-def multiply(a, b):
+def multiplication(a, b):
     a = int(a)
     b = int(b)
     c = a * b
@@ -28,4 +28,8 @@ class Calculator:
 
     def subtract(self, a, b ):
         self.result = subtraction(a, b)
+        return self.result
+
+    def multiply(self, a, b):
+        self.result = multiplication(a, b)
         return self.result
