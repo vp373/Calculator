@@ -10,7 +10,7 @@ def subtraction(a, b):
     c = b - a
     return c
 
-def multiplication(a, b):
+def multiply(a, b):
     a = int(a)
     b = int(b)
     c = a * b
