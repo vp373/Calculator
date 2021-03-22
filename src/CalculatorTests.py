@@ -40,13 +40,13 @@ class MyTestCase(unittest.TestCase):
     def test_square_method_calculator(self):
         test_data = CsvReader('/src/Squaring.csv').data
         for row in test_data:
-            self.assertEqual(self.calculator.square(row['Value 1'], ), int(row['Result']))
+            self.assertEqual(self.calculator.squaring(row['Value 1'], ), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_sqrt_method_calculator(self):
         test_data = CsvReader('/src/Sqrt.csv').data
         for row in test_data:
-            self.assertAlmostEqual(self.calculator.squareroot(row['Value 1'], ), float(row['Result']))
+            self.assertAlmostEqual(self.calculator.sqrt(row['Value 1'], ), float(row['Result']))
             self.assertAlmostEqual(self.calculator.result, float(row['Result']))
 
 if __name__ == '__main__':
